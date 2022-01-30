@@ -1,15 +1,17 @@
 <article>
-    <a href="/dashboard">Back to dashboard</a>
+    <a href="/dashboard" class="back-to-dashboard"><i class="fas fa-long-arrow-alt-left"></i> Back to dashboard</a>
     <h2>Edit Post</h2>
     <form class="edit-post-form">
-        <div>
-        <input name="post-title" type="text" value="{{post.title}}">
+        <div class="edit-post-content-container">
+            <label for="post-title">Title</label>
+            <input name="post-title" type="text" value="{{post.title}}">
         </div>
-        <div>
+        <div class="edit-post-content-container">
+            <label for="post-content">Post Content</label>
             <input name="post-content" type="text" value="{{post.post_content}}">
         </div>
-        <button type="submit">Save post</button>
-        <button type="button" class="delete-post-btn">Delete post</button>
+        <button type="submit"><i class="fas fa-save"></i> Save post</button>
+        <button type="button" class="delete-post-btn"><i class="fas fa-trash-alt"></i> Delete post</button>
     </form>
 </article>
 

@@ -1,32 +1,34 @@
-<section>
-    <h2>Create New Post</h2>
-    <form class="new-post-form">
-        <div>
-            <label for="post-title">Title</label>
-            <input type="text" id="post-title" name="post-title">
-        </div>
-        <div>
-            <label for="post-content">Post Content</label>
-            <input type="text" id="post-content" name="post-content">
-        </div>
-        <button type="submit" class="btn">Create</button>
-    </form>
-</section>
+<div>
+    <section>
+        <h2>Create New Post</h2>
+        <form class="new-post-form">
+            <div class="create-post-content-container">
+                <label for="post-title">Title</label>
+                <input type="text" id="post-title" name="post-title">
+            </div>
+            <div class="create-post-content-container">
+                <label for="post-content">Post Content</label>
+                <input type="text" id="post-content" name="post-content">
+            </div>
+            <button type="submit" class="btn"><i class="fas fa-plus"></i> Create</button>
+        </form>
+    </section>
 
-<section>
-    <h2>Your Posts</h2>
-    {{#if posts.length}}
-    <ol>
-        {{#each posts as |post|}}
-        <li>
-            {{> post-overview post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
-        </li>
-        {{/each}}
-    </ol>
-    {{else}}
-    <p>You haven't posted yet.</p>
-    {{/if}}
-</section>
+    <section>
+        <h2>Your Posts</h2>
+        {{#if posts.length}}
+        <ul>
+            {{#each posts as |post|}}
+            <li>
+                {{> post-overview post}}
+                <a href="/dashboard/edit/{{post.id}}" class="edit-link"><i class="fas fa-edit"></i> Edit Post</a>
+            </li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <p>You haven't posted yet.</p>
+        {{/if}}
+    </section>
+</div>
 
 <script src="/javascript/add-post.js"></script>

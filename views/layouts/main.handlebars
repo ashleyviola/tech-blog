@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
-    {{!-- <link rel="stylesheet" href="/stylesheets/style.css"> --}}
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Tourney:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
 </head>
 <body>
     <div>
         <header>
             <h1>
-                <a href="/">Tech Blog</a>
+                <a href="/"><i class="fas fa-robot"></i> TECH<span id="blog-link">BLOG</span></a>
             </h1>
             <nav>
                 {{#if loggedIn}}
-                <button id="logout">logout.</button>
-                <a href="/dashboard">dashboard.</a>
+                <a href="/dashboard" id="dashboard"><i class="fas fa-columns"></i>  dashboard</a>
+                <button id="logout"><i class="fas fa-sign-out-alt"></i>  logout</button>
                 {{else}}
-                <a href="/dashboard">dashboard.</a>
-                <a href="/login">login.</a>
+                <a href="/dashboard" id="dashboard"><i class="fas fa-columns"></i>  dashboard</a>
+                <a href="/login" id="login"><i class="fas fa-sign-in-alt"></i>  login</a>
                 {{/if}}
             </nav>
         </header>
@@ -27,7 +32,6 @@
         {{{ body }}}
     </main>
     <footer>
-        Thanks for visiting! 
     </footer>
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>

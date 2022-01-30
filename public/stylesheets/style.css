@@ -1,0 +1,173 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #2e3047;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, p, a, span, textarea, i, label, input {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 300;
+    margin: 0px;
+    color: #3bba9c;
+}
+
+#blog-link{
+    font-weight: 600;
+    font-size: 35px;
+    color: #3bba9c;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    border-bottom: solid white 1px;
+    padding: 5px 0;
+    width: fit-content;
+}
+h3 {
+    font-size: 14px;
+    font-weight: 200;
+    color: #707793;
+}
+p {
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    width: 50vw;
+}
+span{
+    font-weight: 200;
+    color: #707793;
+    font-size: 12px;
+}
+a {
+    color: white;
+}
+i {
+    color: #3bba9c;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2vw;
+}
+textarea{
+    width: 50vw;
+    margin: 2vw 0;
+}
+main {
+    padding: 2vw;
+}
+
+#dashboard {
+    padding: 0 1vw;
+}
+#login, .edit-link, .back-to-dashboard {
+    border: white 1px solid;
+    color: white;
+    padding: .5vw ;
+}
+
+.edit-link {
+    border: transparent 1px solid;
+    color: white;
+    padding: .5vw ;
+}
+#login:hover, .edit-link:hover, .back-to-dashboard:hover {
+    border: white 1px solid;
+    background-color: white;
+    color: #2e3047;
+    padding: .5vw ;
+}
+#dashboard a, #login a{
+    color: white;
+    font-size: 14px;
+
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    width: 75vw;  
+}
+
+.post-list {
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    border: solid 1px white;
+    margin: 1vw 0;
+}
+.post-content {
+    display: flex;
+    flex-direction: column;
+}
+.fa-hat-wizard {
+    padding: 0 1vw 0 0;
+    font-size: 50px;
+}
+
+button {
+    background-color: transparent;
+    border: white 1px solid;
+    color: white;
+    padding: .5vw ;
+    font-size: 14px;
+}
+
+button:hover{
+    background-color: white;
+    border: white 1px solid;
+    color: #2e3047;
+    cursor: pointer;
+}
+
+.login-page{
+    display: flex;
+    justify-content: stretch;
+}
+
+.signup-form{
+    margin: 0 10vw;
+}
+.login-form label, .signup-form label, .new-post-form label, .edit-post-form label {
+    color: white;
+    font-size: 14px;
+}
+.login-content-container{
+    padding: 0 0 1vw;
+}
+.create-post-content-container {
+    padding: 0 0 1vw;
+}
+.post-content-container {
+    border: white solid 1px;
+    width: 65vw;
+    padding: 1vw 1vw;
+}
+.edit-post-content-container {
+    padding: 0 0 1vw;
+}
+.comment {
+    background-color: rgba(60, 63, 99, .5);
+    margin: 2vw 0;
+    padding: 1vw;
+    width: 50vw;
+}
+.edit-post-form {
+    border: white solid 1px;
+    width: 65vw;
+    padding: 1vw 1vw;
+}
