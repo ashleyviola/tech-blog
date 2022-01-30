@@ -1,4 +1,3 @@
-{{#if loggedIn}}
 <section>
     <h2>Create New Post</h2>
     <form class="new-post-form">
@@ -14,9 +13,9 @@
     </form>
 </section>
 
-{{#if posts.length}}
 <section>
     <h2>Your Posts</h2>
+    {{#if posts.length}}
     <ol>
         {{#each posts as |post|}}
         <li>
@@ -25,10 +24,9 @@
         </li>
         {{/each}}
     </ol>
+    {{else}}
+    <p>You haven't posted yet.</p>
+    {{/if}}
 </section>
-{{/if}}
-{{else}}
-{{> login-info}}
-{{/if}}
 
 <script src="/javascript/add-post.js"></script>
