@@ -1,18 +1,13 @@
-{{> login-info}}
-
 {{#if loggedIn}}
 
 {{> post-info post}}
 
-<form class="comment-form">
-    <div>
-        <textarea name="comment-body"></textarea>
-    </div>
-    <div>
-        <button type="submit">add comment</button>
-    </div>
-</form>
+{{> comment-form}}
 
 {{> comments post.comments}}
+
+{{else}}
+
+{{> login-info}}
 
 {{/if}}
