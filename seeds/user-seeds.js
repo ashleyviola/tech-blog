@@ -15,7 +15,7 @@ const userdata = [
   {
     username: 'iboddam2',
     email: 'cstoneman2@last.fm',
-    password: 'password123'
+    password: 'cstoneman2@last.fmcstoneman2@last.fm'
   },
   {
     username: 'dstanmer3',
